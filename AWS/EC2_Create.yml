@@ -1,0 +1,14 @@
+- name: Provisoning EC2 servers
+  hosts: localhost
+  tasks:
+    ec2:
+      key_name: jaydeep_key_pair
+      instance_type: t2.micro
+      image: ami-0d2692b6acea72ee6
+      wait: yes
+      group: jaydeep_security_group
+      count: 2
+      vpc_subnet_id: subnet-0ce020d115cf0c602
+      assign_public_ip: yes
+      instance_tags:
+        db: ansible
