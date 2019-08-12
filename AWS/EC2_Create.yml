@@ -12,6 +12,6 @@
         count: 2
         vpc_subnet_id: subnet-0ce020d115cf0c602
         assign_public_ip: yes
-        instance_tags:
         region: ap-south-1
+        instance_tags:
           cm_tool: ansible
