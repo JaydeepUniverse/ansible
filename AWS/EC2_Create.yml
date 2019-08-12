@@ -2,7 +2,7 @@
  - name: Provisoning EC2 servers
    hosts: localhost
    tasks:
-    - name: Creating EC2 servers
+    - name: Creating EC2 servers ok
       ec2:
         key_name: jaydeep_key_pair
         instance_type: t2.micro
